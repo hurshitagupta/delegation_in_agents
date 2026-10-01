@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 6 items
+
+tests/test_result_review.py::test_valid_result_is_accepted PASSED        [ 16%]
+tests/test_result_review.py::test_result_can_be_reassigned PASSED        [ 33%]
+tests/test_result_review.py::test_result_can_be_rejected PASSED          [ 50%]
+tests/test_result_review.py::test_empty_worker_result_is_rejected PASSED [ 66%]
+tests/test_result_review.py::test_invalid_review_decision_is_rejected PASSED [ 83%]
+tests/test_result_review.py::test_transient_review_failure_is_retried PASSED [100%]
+
+============================== 6 passed in 2.54s ==============================

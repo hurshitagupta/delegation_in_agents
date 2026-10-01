@@ -1,0 +1,41 @@
+{
+  "handoff": {
+    "status": "success",
+    "handoff": {
+      "goal": "Research factual information about short-term memory in AI agents.",
+      "context": "This will be used in a beginner-level explanation of agent memory.",
+      "constraints": [
+        "Keep the response concise.",
+        "Use simple language.",
+        "Do not invent citations."
+      ],
+      "expected_output": "A short factual explanation in 3 to 5 bullet points.",
+      "assigned_worker": "research_worker",
+      "result_owner": "supervisor"
+    },
+    "assignment_reason": "Researching factual information aligns with the research_worker's capabilities."
+  },
+  "worker_execution": {
+    "status": "success",
+    "worker": "research_worker",
+    "goal": "Research factual information about short-term memory in AI agents.",
+    "result": "- Short\u2011term memory (often called a **working memory**) holds information that an AI agent needs for the current task, such as recent observations, intermediate calculations, or temporary goals.  \n- It is usually implemented as a limited\u2011size data structure (e.g., a buffer, queue, or fixed\u2011length vector) that is updated each time step and overwritten when full.  \n- In reinforcement\u2011learning agents, short\u2011term memory helps the policy consider recent states to handle partial observability (e.g., using recurrent neural networks or attention over the last\u202fN\u202fsteps).  \n- Unlike long\u2011term memory (model parameters or external databases), short\u2011term memory is volatile: it is cleared when the episode ends or the agent is reset.  \n- Properly sized short\u2011term memory improves performance on tasks that require remembering recent events, but making it too large can increase computational cost and cause the agent to rely on outdated information.",
+    "result_owner": "supervisor",
+    "attempts": 1,
+    "duration_ms": 1604.13
+  },
+  "supervisor_review": {
+    "status": "success",
+    "decision": "accept",
+    "worker": "research_worker",
+    "reason": "Provides 5 concise, simple bullet points covering short\u2011term memory in AI agents without citations.",
+    "feedback": "",
+    "result_owner": "supervisor",
+    "attempts": 1,
+    "duration_ms": 3581.85
+  },
+  "rejection_path": {
+    "status": "rejected",
+    "error": "empty_worker_result"
+  }
+}
