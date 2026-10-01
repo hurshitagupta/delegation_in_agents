@@ -1,0 +1,89 @@
+{
+  "happy_path": {
+    "run_id": "91ee67bf-46cc-4a32-af26-c418e4676d01",
+    "status": "success",
+    "final_state": "accepted",
+    "worker": "research_worker",
+    "review_decision": "accept",
+    "result_owner": "supervisor",
+    "step_count": 4,
+    "max_steps": 4,
+    "duration_ms": 9013.5,
+    "trace": [
+      {
+        "step_number": 1,
+        "step": "assignment",
+        "status": "success",
+        "details": {
+          "status": "success",
+          "goal": "Research factual information about short-term memory in AI agents.",
+          "worker": "research_worker",
+          "worker_details": {
+            "name": "research_worker",
+            "capabilities": [
+              "research",
+              "fact_checking",
+              "information_gathering"
+            ],
+            "description": "Collects and verifies information."
+          },
+          "reason": "The task requires gathering and verifying factual information, which matches the research worker's capabilities.",
+          "attempts": 1,
+          "duration_ms": 4982.69
+        }
+      },
+      {
+        "step_number": 2,
+        "step": "handoff",
+        "status": "success",
+        "details": {
+          "assigned_worker": "research_worker",
+          "goal": "Research factual information about short-term memory in AI agents.",
+          "context": "The findings will be used in beginner-level learning material.",
+          "constraints": [
+            "Keep the response concise.",
+            "Use simple language.",
+            "Do not invent citations."
+          ],
+          "expected_output": "A short factual explanation in 3 to 5 bullet points.",
+          "result_owner": "supervisor"
+        }
+      },
+      {
+        "step_number": 3,
+        "step": "worker_execution",
+        "status": "success",
+        "details": {
+          "status": "success",
+          "worker": "research_worker",
+          "goal": "Research factual information about short-term memory in AI agents.",
+          "result": "- **Definition**: In AI agents, short\u2011term memory (often called \u201cworking memory\u201d) holds recent inputs, intermediate calculations, or context for a limited number of steps before the information is discarded or overwritten.  \n- **Implementation**: It is usually realized with data structures such as buffers, queues, or hidden states in recurrent neural networks (RNNs), Long\u2011Short\u2011Term Memory (LSTM) cells, and transformer attention caches.  \n- **Purpose**: Short\u2011term memory lets the agent maintain continuity across a conversation, plan multi\u2011step actions, or track temporary variables without needing to store everything",
+          "result_owner": "supervisor",
+          "attempts": 1,
+          "duration_ms": 1814.06
+        }
+      },
+      {
+        "step_number": 4,
+        "step": "supervisor_review",
+        "status": "success",
+        "details": {
+          "status": "success",
+          "decision": "accept",
+          "worker": "research_worker",
+          "reason": "Provides 3 concise bullet points, uses simple language, and includes no invented citations.",
+          "feedback": "",
+          "result_owner": "supervisor",
+          "attempts": 1,
+          "duration_ms": 2215.65
+        }
+      }
+    ]
+  },
+  "rejection_path": {
+    "run_id": "f87f6692-21b8-414b-8e0a-c4e832e81076",
+    "status": "rejected",
+    "error": "invalid_goal",
+    "trace": []
+  }
+}

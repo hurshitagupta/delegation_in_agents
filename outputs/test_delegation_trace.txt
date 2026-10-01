@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 6 items
+
+tests/test_delegation_trace.py::test_complete_delegation_trace PASSED    [ 16%]
+tests/test_delegation_trace.py::test_invalid_goal_is_rejected PASSED     [ 33%]
+tests/test_delegation_trace.py::test_assignment_failure_stops_execution PASSED [ 50%]
+tests/test_delegation_trace.py::test_worker_failure_stops_before_review PASSED [ 66%]
+tests/test_delegation_trace.py::test_reassign_decision_requires_further_review PASSED [ 83%]
+tests/test_delegation_trace.py::test_step_limit_is_defined PASSED        [100%]
+
+============================== 6 passed in 2.10s ==============================
