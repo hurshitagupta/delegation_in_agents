@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents
+configfile: pyproject.toml
+collecting ... collected 6 items
+
+tests/test_worker_registry.py::test_registered_worker_can_be_retrieved PASSED [ 16%]
+tests/test_worker_registry.py::test_unknown_worker_is_rejected PASSED    [ 33%]
+tests/test_worker_registry.py::test_worker_without_capabilities_is_rejected PASSED [ 50%]
+tests/test_worker_registry.py::test_duplicate_worker_is_rejected PASSED  [ 66%]
+tests/test_worker_registry.py::test_worker_limit_is_enforced PASSED      [ 83%]
+tests/test_worker_registry.py::test_find_worker_by_capability PASSED     [100%]
+
+============================== 6 passed in 0.05s ==============================

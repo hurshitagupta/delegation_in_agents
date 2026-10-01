@@ -1,0 +1,43 @@
+{
+  "worker_count": 2,
+  "workers": [
+    {
+      "name": "research_worker",
+      "capabilities": [
+        "research",
+        "fact_checking",
+        "information_gathering"
+      ],
+      "description": "Collects and verifies information."
+    },
+    {
+      "name": "writing_worker",
+      "capabilities": [
+        "writing",
+        "summarization",
+        "drafting"
+      ],
+      "description": "Produces written drafts and summaries."
+    }
+  ],
+  "happy_path": {
+    "status": "success",
+    "worker": {
+      "name": "research_worker",
+      "capabilities": [
+        "research",
+        "fact_checking",
+        "information_gathering"
+      ],
+      "description": "Collects and verifies information."
+    }
+  },
+  "capability_lookup": [
+    "writing_worker"
+  ],
+  "rejection_path": {
+    "status": "rejected",
+    "error": "worker_not_allowed",
+    "worker": "unknown_worker"
+  }
+}
