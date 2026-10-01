@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 6 items
+
+tests/test_handoff.py::test_valid_handoff_is_created PASSED              [ 16%]
+tests/test_handoff.py::test_worker_executes_handoff PASSED               [ 33%]
+tests/test_handoff.py::test_invalid_result_owner_is_rejected PASSED      [ 50%]
+tests/test_handoff.py::test_missing_field_is_rejected PASSED             [ 66%]
+tests/test_handoff.py::test_context_limit_is_enforced PASSED             [ 83%]
+tests/test_handoff.py::test_transient_worker_failure_is_retried PASSED   [100%]
+
+============================== 6 passed in 1.93s ==============================
