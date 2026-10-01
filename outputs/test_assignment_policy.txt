@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Hurshita Gupta\OneDrive\Desktop\delegation_in_agents
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collecting ... collected 6 items
+
+tests/test_assignment_policy.py::test_valid_assignment PASSED            [ 16%]
+tests/test_assignment_policy.py::test_writing_assignment PASSED          [ 33%]
+tests/test_assignment_policy.py::test_unknown_worker_is_rejected PASSED  [ 50%]
+tests/test_assignment_policy.py::test_model_can_reject_when_no_worker_matches PASSED [ 66%]
+tests/test_assignment_policy.py::test_empty_goal_is_rejected PASSED      [ 83%]
+tests/test_assignment_policy.py::test_retry_on_transient_failure PASSED  [100%]
+
+============================== 6 passed in 1.87s ==============================

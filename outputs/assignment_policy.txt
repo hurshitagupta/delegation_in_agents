@@ -1,0 +1,53 @@
+{
+  "happy_path": {
+    "status": "success",
+    "goal": "Research factual information about how AI agent memory works.",
+    "worker": "research_worker",
+    "worker_details": {
+      "name": "research_worker",
+      "capabilities": [
+        "research",
+        "fact_checking",
+        "information_gathering"
+      ],
+      "description": "Collects and verifies information."
+    },
+    "reason": "The task is to gather and verify factual information about AI agent memory, which aligns with the research_worker's research and fact\u2011checking capabilities.",
+    "attempts": 1,
+    "duration_ms": 5612.27
+  },
+  "writing_assignment": {
+    "status": "success",
+    "goal": "Write a short summary explaining the benefits of delegation.",
+    "worker": "writing_worker",
+    "worker_details": {
+      "name": "writing_worker",
+      "capabilities": [
+        "writing",
+        "summarization",
+        "drafting"
+      ],
+      "description": "Produces written drafts and summaries."
+    },
+    "reason": "The task requires writing a concise summary, which matches the writing_worker's writing and summarization capabilities.",
+    "attempts": 1,
+    "duration_ms": 6805.24
+  },
+  "rejection_path": {
+    "status": "success",
+    "goal": "Calculate the monthly salary tax for an employee.",
+    "worker": "research_worker",
+    "worker_details": {
+      "name": "research_worker",
+      "capabilities": [
+        "research",
+        "fact_checking",
+        "information_gathering"
+      ],
+      "description": "Collects and verifies information."
+    },
+    "reason": "Calculating salary tax requires gathering tax rates and applying them, which aligns with the research_worker's research and fact\u2011checking capabilities.",
+    "attempts": 1,
+    "duration_ms": 1636.17
+  }
+}
